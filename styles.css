@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
+  border-top: 7px solid #ffff00;
+}
+
+body {
+  position: relative;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  border-bottom: 1px solid #cbcbcb;
+  padding: 15px 10px;
+}
+
+#todo-list li div {
+  display: flex;
+  align-items: center;
+}
+
+#todo-list p {
+  display: inline;
+  margin-left: 10px;
+}
+
+#todo-list {
+  padding-left: 0px;
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+
+#user-input,
+#btn-submit,
+button {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+
+#user-input {
+  width: 80%;
+}
+
+#user-input:focus {
+  outline: none;
+  border: 3px solid #ffff00;
+}
+
+#btn-submit {
+  cursor: pointer;
+}
+
+#btn-submit:hover,
+button:hover {
+  background-color: #ffff00;
+}
+
+#btn-submit:active,
+button:active {
+  background-color: #e4e436;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    position: relative;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    position: relative;
+    width: 60%;
+    margin: auto;
+  }
+}
